@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>Grass Roots Cafe</title>
+        
+        <script
+                src="http://maps.googleapis.com/maps/api/js">
+        </script>
+
+        <script>
+            var myCenter=new google.maps.LatLng(42.355026,-71.059247);
+
+            function initialize()
+            {
+                var mapProp = {
+                center:myCenter,
+                zoom:15,
+                mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+
+                var map=new        google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+                var marker=new google.maps.Marker({
+                    position:myCenter,
+                });
+
+                marker.setMap(map);
+                
+                var infowindow = new google.maps.InfoWindow({
+  content:"Grassroots Cafe <br> Address: 101 Arch St #110, Boston, MA 02110"
+  });
+
+infowindow.open(map,marker);
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+        
+    </head>
+    <body>
+        <!--<div class="nav">
+            <div class="container">
+                <ul class="pull-left">
+                    <li><a href="index.html">Grass Roots Cafe</a></li>
+                    <li><a href="#story-sec">Story</a></li>
+                    <li><a href="#menu-sec">Menu</a></li>
+                    <li><a href="#loc-sec">Location</a></li>
+                </ul>
+                <ul class="pull-right">
+                    <li><a href="#">CONNECT</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>-->
+        
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Grass Roots Cafe</h1>
+                <p>Grass Roots Cafe is a simple stylish cafe, nestled in a perfect spot serving sandwiches, bowles, and all kinds of quick delicious foods.</p>
+                <a href="#">Link</a>
+            </div>
+        </div> 
+        
+        <div class="story-sec">
+            <div class="container">
+                <div class="page-header">
+                    <h2 id="story-sec">Story Section</h2>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        
+        <div class="menu-sec">
+            <div class="container">
+                <div class="page-header">
+                    <h2 id="menu-sec">Menu Section</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="col-md-8">
+                    <ul class="enlarge">
+                    <li>
+                        <img src="food_images/140x140/1.jpg" width="150px" height="100px" alt="Dechairs" />
+                            <span>
+                                <img src="food_images/originals/1.jpg" alt="Deckchairs" />
+                                <br />Deckchairs on Blackpool beach</span>        </li>
+                    
+                    <li>
+                        <img src="food_images/140x140/2.jpg" width="150px" height="100px" alt="Blackpool sunset" />
+                            <span>
+                                <img src="food_images/originals/2.jpg" alt="Blackpool sunset" />
+                                <br />Sunset over the Irish Sea at Blackpool</span>    </li>
+                    
+                    <li>
+                        <img src="food_images/140x140/3.jpg" width="150px" height="100px" alt="Blackpool pier" />
+                            <span>
+                                <img src="food_images/originals/3.jpg" alt="Blackpool pier" />
+                                <br />Rolling waves off Blackpool North Pier</span>         </li>
+                </ul>
+                <ul class="enlarge">
+
+                    <li>
+                        <img src="food_images/140x140/4.jpg" width="150px" height="100px" alt="Dechairs" />
+                            <span>
+                                <img src="food_images/originals/4.jpg" alt="Deckchairs" />
+                                <br />Deckchairs on Blackpool beach</span>        </li>
+                    
+                    <li>
+                        <img src="food_images/140x140/5.jpg" width="150px" height="100px" alt="Blackpool sunset" />
+                            <span>
+                                <img src="food_images/originals/5.jpg" alt="Blackpool sunset" />
+                                <br />Sunset over the Irish Sea at Blackpool</span>    </li>
+                    
+                    <li>
+                        <img src="food_images/140x140/6.jpg" width="150px" height="100px" alt="Blackpool pier" />
+                            <span>
+                                <img src="food_images/originals/6.jpg" alt="Blackpool pier" />
+                                <br />Rolling waves off Blackpool North Pier</span>         </li>
+                </ul>
+                
+                <ul class="enlarge">
+                    <li>
+                        <img src="food_images/140x140/1.jpg" width="150px" height="100px" alt="Dechairs" />
+                            <span>
+                                <img src="food_images/originals/1.jpg" alt="Deckchairs" />
+                                <br />Deckchairs on Blackpool beach</span>        </li>
+                    
+                    <li>
+                        <img src="food_images/140x140/2.jpg" width="150px" height="100px" alt="Blackpool sunset" />
+                            <span>
+                                <img src="food_images/originals/2.jpg" alt="Blackpool sunset" />
+                                <br />Sunset over the Irish Sea at Blackpool</span>    </li>
+                    
+                    <li>
+                        <img src="food_images/140x140/3.jpg" width="150px" height="100px" alt="Blackpool pier" />
+                            <span>
+                                <img src="food_images/originals/3.jpg" alt="Blackpool pier" />
+                                <br />Rolling waves off Blackpool North Pier</span>         </li>
+                </ul>
+                <ul class="enlarge">
+
+                    <li>
+                        <img src="food_images/140x140/4.jpg" width="150px" height="100px" alt="Dechairs" />
+                            <span>
+                                <img src="food_images/originals/4.jpg" alt="Deckchairs" />
+                                <br />Deckchairs on Blackpool beach</span>        </li>
+                    
+                    <li>
+                        <img src="food_images/140x140/5.jpg" width="150px" height="100px" alt="Blackpool sunset" />
+                            <span>
+                                <img src="food_images/originals/5.jpg" alt="Blackpool sunset" />
+                                <br />Sunset over the Irish Sea at Blackpool</span>    </li>
+                    
+                    <li>
+                        <img src="food_images/140x140/6.jpg" width="150px" height="100px" alt="Blackpool pier" />
+                            <span>
+                                <img src="food_images/originals/6.jpg" alt="Blackpool pier" />
+                                <br />Rolling waves off Blackpool North Pier</span>         </li>
+                </ul>
+                    </div>
+                </div>
+
+                
+
+
+                
+            </div>
+        </div>
+        
+        <div class="loc-sec">
+            <div class="container">
+                <div class="page-header">
+                    <h2 id="loc-sec">Location Section</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="map-loc">
+                            <div id="googleMap" style="width:500px;height:380px;"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <div id="address">
+                            <p><strong>Grass Roots Cafe</strong> <br><strong>Address:</strong> 101 Arch St #110, Boston, MA 02110 <br><strong>Phone:</strong> (617) 951-2124</p>
+                            <table class="table">
+                                <tr>
+                                    <th></th>
+                                    <th scope="col">OPEN</th>
+                                    <th scope="col">CLOSE</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Monday</th>
+                                    <td>6:30 am</td>
+                                    <td>8:00 pm</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Tuesday</th>
+                                    <td>6:30 am</td>
+                                    <td>8:00 pm</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Wednesday</th>
+                                    <td>6:30 am</td>
+                                    <td>8:00 pm</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Thursday</th>
+                                    <td>6:30 am</td>
+                                    <td>8:00 pm</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Friday</th>
+                                    <td>6:30 am</td>
+                                    <td>8:00 pm</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Saturday</th>
+                                    <td colspan="2">Closed</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Sunday</th>
+                                    <td colspan="2">Closed</td>
+                                </tr>
+                            
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                
+            </div>
+        </div>
+
+        
+        <div class="footer">
+            <div class="container">
+                
+            </div>
+        </div>
+        
+        <div class="navbar-fixed-bottom">
+            <div class="container">
+                <ul class="pull-left">
+                    <li><a href="index.html">Grass Roots Cafe</a></li>
+                    <li><a href="#story-sec">Story</a></li>
+                    <li><a href="#menu-sec">Menu</a></li>
+                    <li><a href="#loc-sec">Location</a></li>
+                </ul>
+                <ul class="pull-right">
+                    <li><a href="#">CONNECT</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>                
+            </div>
+        </div>
+        
+    </body>
+
+</html>
